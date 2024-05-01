@@ -32,7 +32,7 @@ module.exports = {
             // parâmetros recebidos no corpo da requisicao
             const { usu_nome, usu_email, usu_dt_nasc, usu_senha, usu_tipo, usu_ativo } = request.body;
             // instrução SQL
-            const sql = `INSET INTO usuarios
+            const sql = `INSERT INTO usuarios
                 (usu_nome, usu_email, usu_dt_nasc, usu_senha, usu_tipo, usu_ativo)
                 VALUES (?, ?, ?, ?, ?, ?)`;
             // definição dos dados a serem inseridos em um array
